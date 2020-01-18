@@ -21,7 +21,7 @@
             .container <router-view/>
         footer.page-footer.font-small
             .footer-copyright.text-center.py-3 © 2020 Copyright:
-                | #[a(href="https://www.udemy.com/") Lesson with UDEMY.COM ]
+                |  #[a(href="https://www.udemy.com/") Lesson with UDEMY.COM ]
 </template>
 
 <script>
