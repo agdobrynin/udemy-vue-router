@@ -1,7 +1,9 @@
 <template lang="pug">
     div
         h1 Car ID = {{ id }}
-        router-link(:to="`/car/${id}/details`" tag="button" class="btn btn-primary") Details
+        router-link(:to="`/car/${id}/details`" tag="button" class="btn btn-info") Details (path as string)
+        | &nbsp;
+        router-link(:to="{name: 'carDetails', params: {id: id}}" tag="button" class="btn btn-primary") Details (path with parameters)
         | &nbsp;
         button.btn.btn-secondary(@click.stop="gotoCarsList") List all cars
         router-view
