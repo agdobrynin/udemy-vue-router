@@ -13,10 +13,10 @@
                 .collapse.navbar-collapse#navbarNavAltMarkup(:class="{'show': show }")
                     .navbar-nav
                         <router-link to="/cars"
-                            | class="nav-item nav-link" exact-active-class="active"
+                            | class="nav-item nav-link" active-class="active" exact
                             | @click.native="show = false">Cars</router-link>
                         <router-link to="/about"
-                            | class="nav-item nav-link" exact-active-class="active"
+                            | class="nav-item nav-link" active-class="active" exact
                             |  @click.native="show = false">About</router-link>
             .container <router-view/>
         footer.page-footer.font-small
