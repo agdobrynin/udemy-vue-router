@@ -4,7 +4,7 @@
         HelloWorld(msg="Привет Мир VueJs!") Через компонет
         ul
             li(v-for="car in cars")
-                router-link(:to="`/car/${car.id}`" :key="car.id") {{`${car.mark} ${car.model}` }}
+                router-link(:to="{name: 'pageCar', params:{id: car.id}}" :key="car.id") {{`${car.mark} ${car.model}` }}
 </template>
 
 <script>

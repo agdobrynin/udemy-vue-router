@@ -3,7 +3,7 @@
         h1 Car ID = {{ id }}
         router-link(:to="`/car/${id}/details`" tag="button" class="btn btn-info") Details (path as string)
         | &nbsp;
-        router-link(:to="{name: 'carDetails', params: {id: id}}" tag="button" class="btn btn-primary") Details (path with parameters)
+        router-link(:to="{name: 'pageCarDetails', params: {id: id}}" tag="button" class="btn btn-primary") Details (path with parameters)
         | &nbsp;
         button.btn.btn-secondary(@click.stop="gotoCarsList") List all cars
         router-view
@@ -19,7 +19,8 @@
         },
         methods: {
             gotoCarsList() {
-                this.$router.push("/cars/");
+
+                this.$router.push({name: "pageCars"});
             },
         },
         watch: {
