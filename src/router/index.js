@@ -7,7 +7,7 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'mainPage',
     component: Home
   },
   {
@@ -34,7 +34,13 @@ const routes = [
         path: 'details',
       },
     ],
-  }
+  },
+  // Page not found
+  {
+    path: '*',
+    name: 'pageNotFound',
+    component: () => import(/* webpackChunkName: "pageNotFount" */ '../components/PageNotFound'),
+  },
 ];
 
 const router = new VueRouter({

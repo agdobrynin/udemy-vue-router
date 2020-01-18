@@ -17,6 +17,8 @@
                             @click.native="show = false") About
                         router-link(to="/car/1000" class="nav-item nav-link" active-class="active" exact
                             @click.native="show = false") Car 1000
+                        router-link(to="/mysteryPage/where/me/" class="nav-item nav-link" active-class="active" exact
+                            @click.native="show = false") Mystery page on site
 
             .container.pb-3 <router-view/>
         footer.page-footer.font-small
