@@ -4,7 +4,7 @@
         <HelloWorld msg="Привет Мир!">Через компонет</HelloWorld>
         ul
             li(v-for="car in cars")
-                <router-link :to="`car/${car.id}`" :key="car.id"
+                <router-link :to="`/car/${car.id}`" :key="car.id"
                     | >{{`${car.mark} ${car.model}` }}</router-link>
 </template>
 
