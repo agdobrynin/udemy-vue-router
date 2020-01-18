@@ -1,11 +1,10 @@
 <template lang="pug">
     div
         h1 Cars page
-        <HelloWorld msg="Привет Мир!">Через компонет</HelloWorld>
+        HelloWorld(msg="Привет Мир VueJs!") Через компонет
         ul
             li(v-for="car in cars")
-                <router-link :to="`/car/${car.id}`" :key="car.id"
-                    | >{{`${car.mark} ${car.model}` }}</router-link>
+                router-link(:to="`/car/${car.id}`" :key="car.id") {{`${car.mark} ${car.model}` }}
 </template>
 
 <script>
