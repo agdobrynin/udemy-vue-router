@@ -18,6 +18,9 @@
                         <router-link to="/about"
                             | class="nav-item nav-link" active-class="active" exact
                             |  @click.native="show = false">About</router-link>
+                        <router-link to="/car/1000"
+                            | class="nav-item nav-link" active-class="active" exact
+                            | @click.native="show = false">Car 1000</router-link>
             .container <router-view/>
         footer.page-footer.font-small
             .footer-copyright.text-center.py-3 © 2020 Copyright:
