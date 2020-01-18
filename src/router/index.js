@@ -26,7 +26,14 @@ const routes = [
   {
     path: '/car/:id',
     name: 'car',
-    component: () => import(/* webpackChunkName: "car" */ '../views/Car')
+    component: () => import(/* webpackChunkName: "car" */ '../views/Car'),
+    children: [
+      {
+        name: 'carDetails',
+        component: () => import(/* webpackChunkName: "carDetails" */ '../components/CarDetails'),
+        path: 'details',
+      },
+    ],
   }
 ];
 
