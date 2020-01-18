@@ -11,10 +11,10 @@
                     span.navbar-toggler-icon &nbsp;
                 .collapse.navbar-collapse#navbarNavAltMarkup(:class="{'show': show }")
                     .navbar-nav
-                        router-link(:to="{name: 'pageCars'}" class="nav-item nav-link" active-class="active" exact
-                            @click.native="show = false") Cars
                         router-link(:to="{name: 'pageAbout'}" class="nav-item nav-link" active-class="active" exact
                             @click.native="show = false") About
+                        router-link(:to="{name: 'pageCars'}" class="nav-item nav-link" active-class="active" exact
+                            @click.native="show = false") Cars
                         router-link(:to="{name: 'pageCar', params:{id: 1000}}" class="nav-item nav-link" active-class="active" exact
                             @click.native="show = false") Car 1000
                         router-link(to="/mysteryPage/where/me/" class="nav-item nav-link" active-class="active" exact
